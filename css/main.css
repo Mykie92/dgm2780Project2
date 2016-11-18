@@ -1,0 +1,152 @@
+/* webkit,mox,ms Mixin */
+/* line 37, ../scss/partials/_header.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  webkit-font-smoothing: antialiased; }
+
+/* line 42, ../scss/partials/_header.scss */
+#header {
+  height: 30px;
+  padding: 20px;
+  background-color: #3d2c3a; }
+  /* line 48, ../scss/partials/_header.scss */
+  #header h1 {
+    float: left;
+    color: #f6ad7c;
+    font-size: 30px; }
+    @media screen and (min-width: 551px) and (max-width: 989px) {
+      /* line 48, ../scss/partials/_header.scss */
+      #header h1 {
+        font-size: 20px; } }
+    /* line 61, ../scss/partials/_header.scss */
+    #header h1 img {
+      float: left;
+      width: 50px;
+      margin-top: -10px; }
+    @media screen and (min-width: 551px) and (max-width: 989px) {
+      /* line 68, ../scss/partials/_header.scss */
+      #header h1 span {
+        position: relative;
+        top: 5px; } }
+    @media screen and (max-width: 550px) {
+      /* line 68, ../scss/partials/_header.scss */
+      #header h1 span {
+        display: none; } }
+  /* line 81, ../scss/partials/_header.scss */
+  #header nav {
+    float: right; }
+    /* line 84, ../scss/partials/_header.scss */
+    #header nav li {
+      float: left;
+      list-style-type: none;
+      font-size: 16px;
+      background-color: white;
+      padding: 2px 10px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 10px; }
+      /* line 94, ../scss/partials/_header.scss */
+      #header nav li img {
+        width: 30px;
+        float: left; }
+      /* line 99, ../scss/partials/_header.scss */
+      #header nav li span {
+        margin-top: 8px;
+        display: inline-block;
+        padding-left: 5px; }
+        @media screen and (min-width: 551px) and (max-width: 989px) {
+          /* line 99, ../scss/partials/_header.scss */
+          #header nav li span {
+            display: none; } }
+        @media screen and (max-width: 550px) {
+          /* line 99, ../scss/partials/_header.scss */
+          #header nav li span {
+            display: none; } }
+    /* line 114, ../scss/partials/_header.scss */
+    #header nav li:hover {
+      background-color: #2E9475; }
+      /* line 118, ../scss/partials/_header.scss */
+      #header nav li:hover img {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+
+/* line 3, ../scss/pages/_home-page.scss */
+#home-page {
+  display: block;
+  margin: 0 auto; }
+  /* line 8, ../scss/pages/_home-page.scss */
+  #home-page .figure {
+    background-color: #2E9475;
+    width: 100%;
+    height: 240px; }
+    /* line 14, ../scss/pages/_home-page.scss */
+    #home-page .figure img {
+      display: block;
+      margin: 0 auto; }
+  /* line 21, ../scss/pages/_home-page.scss */
+  #home-page .content {
+    padding: 10px 20px; }
+  /* line 25, ../scss/pages/_home-page.scss */
+  #home-page h2, #home-page h3, #home-page h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #f6ad7c; }
+  /* line 32, ../scss/pages/_home-page.scss */
+  #home-page p {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px; }
+  /* line 38, ../scss/pages/_home-page.scss */
+  #home-page h3 {
+    text-align: center;
+    color: #2E9475; }
+  /* line 45, ../scss/pages/_home-page.scss */
+  #home-page h4 {
+    text-align: center; }
+  /* line 51, ../scss/pages/_home-page.scss */
+  #home-page .box {
+    border-radius: 10px;
+    background-color: #2E9475;
+    height: 250px;
+    width: 1000px;
+    margin: 0 auto; }
+    /* line 58, ../scss/pages/_home-page.scss */
+    #home-page .box img {
+      float: left;
+      padding: 20px;
+      text-align: center; }
+  /* line 66, ../scss/pages/_home-page.scss */
+  #home-page .leftcolumn, #home-page .rightcolumn {
+    float: left;
+    width: 50%; }
+
+/* line 3, ../scss/pages/_footer.scss */
+#footer {
+  display: block;
+  margin: 0 auto; }
+  /* line 8, ../scss/pages/_footer.scss */
+  #footer footer {
+    width: 100%;
+    height: 105px;
+    background-color: #3d2c3a;
+    margin: 0 auto; }
+    /* line 15, ../scss/pages/_footer.scss */
+    #footer footer li {
+      text-align: center;
+      color: white;
+      list-style-type: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer; }
+    /* line 23, ../scss/pages/_footer.scss */
+    #footer footer li:hover {
+      color: #f6ad7c; }
+
+/*# sourceMappingURL=main.css.map */

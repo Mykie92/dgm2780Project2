@@ -1,0 +1,126 @@
+// Header SCSS
+
+
+// Breakpoint mixin
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media screen and (min-width: 990px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media screen and (min-width: 551px) and (max-width: 989px) { @content ; }
+  }
+  @else if $point == mobile {
+     @media screen and (max-width: 550px)  { @content ; }
+
+  }
+}
+
+/* webkit,mox,ms Mixin */
+
+@mixin transform($rotate) {
+    -webkit-transform: $rotate;
+    -moz-transform: $rotate;
+    -ms-transform: $rotate;
+    transform: $rotate;
+}
+@mixin transition($speed) {
+    -webkit-transition: $speed;
+    -moz-transition: $speed;
+    -ms-transition: $speed;
+    transition: $speed;
+}
+
+
+
+
+// Body
+body{
+    font-family: $font-stack;
+    webkit-font-smoothing: antialiased;
+}
+
+#header {
+    // Operator 1
+    height: 10px + 20px;
+    padding: 20px;
+    background-color: $base-color;
+    
+    h1{
+        float: left;
+        color: $primary-color;
+        font-size: $h1-size;
+        //mixin
+        @include breakpoint(tablet){
+            font-size: 20px;
+        }
+        //mixin
+        @include breakpoint(mobile){
+            
+        }
+        
+        img{
+            float:left;
+            // Operator 2
+            width: 75px - 25px;
+            margin-top: -10px;
+        }
+        
+        span{
+            //mixin
+            @include breakpoint(tablet){
+                position: relative;
+                top: 5px;
+            }
+            //mixin
+            @include breakpoint(mobile){
+                display: none;
+            }
+        }
+    }
+
+    nav {
+    	float: right;
+
+    	li {
+    		float: left;
+            list-style-type: none;
+            font-size: 16px;
+            background-color: white;
+            padding: 2px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: $radius;
+            
+            img{
+                width: 30px;
+                float: left;
+                }
+            
+            span{
+                margin-top: 8px;
+                display: inline-block;
+                padding-left: 5px;
+                //mixin
+                @include breakpoint(tablet){
+                    display: none;
+                } 
+                //mixin
+                @include breakpoint(mobile){
+                    display: none;
+                }
+            }
+    	}	
+        
+        li:hover{
+            background-color: $secondary-color;
+            
+            
+            img{
+                //mixin
+                @include transform( rotate(360deg));
+                //mixin
+                @include transition( all .5s ease);
+            }
+        }
+	} // body
+}// #header
